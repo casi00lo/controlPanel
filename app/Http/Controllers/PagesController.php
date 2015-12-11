@@ -9,5 +9,19 @@ use App\Http\Controllers\Controller;
 
 class PagesController extends Controller
 {
-    //
+    public function about ()
+    {
+    	$first='Materiales';
+    	$last='Tecnhology';
+
+    	return view('pages.about',compact('first','last'));
+    		
+    }
+
+        public function contact ()
+    {
+    	
+    	return view('pages.contact');
+    		
+    }
 }
